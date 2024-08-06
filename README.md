@@ -1,9 +1,13 @@
-I have used Dark Channel Prior(DCP) for image dehazing . 
+I wanted to change the previous implementation because it kept giving me contrasted images (even though I changed the parameters)
+Usually when we can lower the contrast, dehazing doesn’t happen that well. So for varying haze intensities, I implemented multi scaled dark channel estimation.
 
-![image](https://user-images.githubusercontent.com/93991971/202361868-8bfe0d84-4816-4bc9-8484-a5752f949976.png)
+For the same paramter, comparison: 
 
-Run dehaze.py to dehaze all images
+Multiscale
 
-1)hazy images are in hazy folder 
-2)dehazed images are dehazed image folder 
-3) psnr and ssim values are in values.csv file.
+![image](https://github.com/user-attachments/assets/17d624a4-ddb3-45cf-8a78-fd74f5ad695b)
+
+Original
+
+![image](https://github.com/user-attachments/assets/fe46a1bd-39ff-42d7-9c4f-cbba7cfe9cb1)
+
