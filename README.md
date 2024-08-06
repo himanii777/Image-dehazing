@@ -1,4 +1,4 @@
-I wanted to change the previous implementation because it kept giving me contrasted images (even though I changed the parameters)
+I wanted to change the previous implementation because it kept giving me contrasted images (even though I changed the parameters).
 Usually when we can lower the contrast, dehazing doesn’t happen that well. So for varying haze intensities, I implemented multi scaled dark channel estimation.
 
 For the same paramter, comparison: 
